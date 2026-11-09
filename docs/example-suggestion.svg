@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 665" role="img" aria-labelledby="title description">
+  <title id="title">ChessLens example: a suggested knight move</title>
+  <desc id="description">After the example moves 1. e4 e5, an arrow points from the white knight on g1 to f3. This is an illustration; engine suggestions depend on the position and search.</desc>
+  <defs>
+    <pattern id="squares" x="60" y="70" width="120" height="120" patternUnits="userSpaceOnUse">
+      <rect width="120" height="120" fill="#eeeed2"/>
+      <rect x="60" width="60" height="60" fill="#769656"/>
+      <rect y="60" width="60" height="60" fill="#769656"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L10 6 L1 11 Z" fill="#f2c94c" stroke="#384824" stroke-width="1"/>
+    </marker>
+  </defs>
+  <rect width="600" height="665" rx="18" fill="#1f2529"/>
+  <text x="60" y="43" fill="#f5f5f5" font-family="system-ui, sans-serif" font-size="23" font-weight="700">Example position: 1. e4 e5</text>
+  <rect x="60" y="70" width="480" height="480" rx="5" fill="url(#squares)"/>
+  <rect x="300" y="310" width="60" height="60" fill="#f5d95b" opacity=".58"/>
+  <rect x="300" y="250" width="60" height="60" fill="#f5d95b" opacity=".58"/>
+  <g fill="#374229" font-family="system-ui, sans-serif" font-size="15" font-weight="600" text-anchor="middle">
+    <text x="90" y="572">a</text><text x="150" y="572">b</text><text x="210" y="572">c</text><text x="270" y="572">d</text>
+    <text x="330" y="572">e</text><text x="390" y="572">f</text><text x="450" y="572">g</text><text x="510" y="572">h</text>
+  </g>
+  <g fill="#b8c2b2" font-family="system-ui, sans-serif" font-size="15" font-weight="600" text-anchor="end">
+    <text x="51" y="108">8</text><text x="51" y="168">7</text><text x="51" y="228">6</text><text x="51" y="288">5</text>
+    <text x="51" y="348">4</text><text x="51" y="408">3</text><text x="51" y="468">2</text><text x="51" y="528">1</text>
+  </g>
+  <g font-family="Apple Symbols, DejaVu Sans, Arial Unicode MS, sans-serif" font-size="46" text-anchor="middle" dominant-baseline="central">
+    <g fill="#242424" stroke="#ebe8d6" stroke-width=".6">
+      <text x="90" y="100">♜</text><text x="150" y="100">♞</text><text x="210" y="100">♝</text><text x="270" y="100">♛</text>
+      <text x="330" y="100">♚</text><text x="390" y="100">♝</text><text x="450" y="100">♞</text><text x="510" y="100">♜</text>
+      <text x="90" y="160">♟</text><text x="150" y="160">♟</text><text x="210" y="160">♟</text><text x="270" y="160">♟</text>
+      <text x="390" y="160">♟</text><text x="450" y="160">♟</text><text x="510" y="160">♟</text><text x="330" y="280">♟</text>
+    </g>
+    <g fill="#fffdf3" stroke="#333" stroke-width="1.3" paint-order="stroke fill">
+      <text x="330" y="340">♙</text>
+      <text x="90" y="460">♙</text><text x="150" y="460">♙</text><text x="210" y="460">♙</text><text x="270" y="460">♙</text>
+      <text x="390" y="460">♙</text><text x="450" y="460">♙</text><text x="510" y="460">♙</text>
+      <text x="90" y="520">♖</text><text x="150" y="520">♘</text><text x="210" y="520">♗</text><text x="270" y="520">♕</text>
+      <text x="330" y="520">♔</text><text x="390" y="520">♗</text><text x="450" y="520">♘</text><text x="510" y="520">♖</text>
+    </g>
+  </g>
+  <path d="M447 515 L397 426" fill="none" stroke="#354220" stroke-width="12" stroke-linecap="round" opacity=".75"/>
+  <path d="M447 515 L397 426" fill="none" stroke="#f2c94c" stroke-width="8" stroke-linecap="round" marker-end="url(#arrowhead)"/>
+  <rect x="290" y="590" width="250" height="43" rx="10" fill="#334147"/>
+  <text x="310" y="618" fill="#fff" font-family="system-ui, sans-serif" font-size="17" font-weight="600">Your turn · Nf3 (example)</text>
+</svg>
