@@ -18,11 +18,19 @@ ChessLens is intended for study and offline practice. Check the rules of any che
 ## Requirements and installation
 
 - macOS 14 or later.
-- Xcode with Swift 6.1 or later, or the matching Xcode Command Line Tools, to build from source.
-- [Stockfish](https://formulae.brew.sh/formula/stockfish), available through Homebrew or as a local executable.
 - Screen Recording permission to capture the board. ChessLens only requests the selected board area.
 
-Download this repository from GitHub (**Code → Download ZIP**) and extract it. In Terminal, install Stockfish, change into the extracted project folder, and run:
+### Install the ready-to-run app
+
+1. Download [`ChessLens-1.3-macOS.zip`](https://github.com/Hatemhss/ChessLens/releases/download/v1.3.0/ChessLens-1.3-macOS.zip) from the [latest release](https://github.com/Hatemhss/ChessLens/releases/tag/v1.3.0).
+2. Unzip it and move `ChessLens.app` to `/Applications`, or open it directly from the extracted folder. Quit any older ChessLens copy first.
+3. If macOS blocks the first launch, use Finder's **Open** action and follow the system prompt. The app is signed locally but is not Apple notarized.
+
+The release already includes Stockfish, so no build tools or Homebrew installation are needed.
+
+### Build from source
+
+Install Xcode with Swift 6.1 or later, or the matching Xcode Command Line Tools. Download this repository from GitHub (**Code → Download ZIP**) and extract it. In Terminal, install [Stockfish](https://formulae.brew.sh/formula/stockfish), change into the extracted project folder, and run:
 
 ```sh
 brew install stockfish
@@ -30,7 +38,7 @@ brew install stockfish
 open dist/ChessLens.app
 ```
 
-If Stockfish is already installed elsewhere, set `CHESSLENS_STOCKFISH_BIN` to its executable path before running the build script. The build creates `dist/ChessLens.app`, copies Stockfish into it, and signs it locally. The Stockfish executable is not stored in this repository because it exceeds GitHub's per-file size limit. You can move the finished app to `/Applications`. If an older ChessLens is running, quit it first from its menu-bar icon, then open the new copy. If macOS blocks the first launch of a downloaded app, use Finder's **Open** action and follow the system prompt.
+If Stockfish is already installed elsewhere, set `CHESSLENS_STOCKFISH_BIN` to its executable path before running the build script. The build creates `dist/ChessLens.app`, copies Stockfish into it, and signs it locally. The Stockfish executable is not stored in the source repository because it exceeds GitHub's per-file size limit. You can move the finished app to `/Applications`.
 
 On the first capture, enable ChessLens in **System Settings → Privacy & Security → Screen & System Audio Recording**. Quit and reopen ChessLens after changing this permission.
 
